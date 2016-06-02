@@ -1,3 +1,53 @@
+/*
+.message {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
 
+.success {
+  @extend .message;
+  border-color: green;
+}
+
+.error {
+  @extend .message;
+  border-color: red;
+}
+
+.warning {
+  @extend .message;
+  border-color: yellow;
+}*/
+.btn {
+  padding: 10px;
+  border: 6px solid white;
+  background: none;
+  text-decoration: none;
+  color: white;
+  font-family: "LLCircularWeb-Bold", sans-serif;
+  text-align: center;
+  font-weight: bold;
+  font-size: 17px;
+  margin: 10px;
+  letter-spacing: 3px; }
+  .btn:hover {
+    background-color: white;
+    color: #F27D21;
+    letter-spacing: 5px;
+    text-shadow: 1px 1px 1px #ccc; }
+  .btn {
+    -webkit-transition: all 1000ms ease;
+    -moz-transition: all 1000ms ease;
+    -ms-transition: all 1000ms ease;
+    -o-transition: all 1000ms ease;
+    transition: all 1000ms ease; }
+
+body {
+  font-family: "LLCircularWeb-Bold", sans-serif;
+  color: #F27D21;
+  max-width: 1700px;
+  margin: 0;
+  background-image: url(http://d0f474ebcd97ed458c03-8394389ee6d234c3e410e8dfdecf8986.r54.cf2.rackcdn.com/toga_img_asset_00_00_573414e9abf37.jpg_w_1667-h_1000-q_80-c_c-b_0.jpg); }
 
 /*# sourceMappingURL=tebenia.css.map */

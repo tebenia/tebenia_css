@@ -1,0 +1,56 @@
+/*
+.message {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+.success {
+  @extend .message;
+  border-color: green;
+}
+
+.error {
+  @extend .message;
+  border-color: red;
+}
+
+.warning {
+  @extend .message;
+  border-color: yellow;
+}*/
+$font-family: 'LLCircularWeb-Bold', sans-serif;
+$font-color: #F27D21;
+
+@mixin transition($speed) {
+    -webkit-transition: all $speed ease;
+	-moz-transition: all $speed ease;
+	-ms-transition: all $speed ease;
+	-o-transition: all $speed ease;
+	transition: all $speed ease;
+}
+
+.btn {
+	padding: 10px;
+	border: 6px solid white;
+	background: none;
+	text-decoration: none;
+	color:white;
+	font-family: $font-family;
+	text-align: center;
+	font-weight: bold;
+	font-size: 17px;
+	margin: 10px;
+	letter-spacing: 3px;
+
+	&:hover {
+		background-color: white;
+		color: $font-color;
+		letter-spacing: 5px;
+		text-shadow: 1px 1px 1px #ccc; 
+	}
+
+	& {
+		@include transition(1000ms);
+	}
+}

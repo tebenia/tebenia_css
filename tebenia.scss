@@ -1,0 +1,13 @@
+@import "button";
+@import "navbar";
+
+$font-family: 'LLCircularWeb-Bold', sans-serif;
+$font-color: #F27D21;
+
+body {
+	font-family: $font-family;
+	color: $font-color;
+	max-width: 1700px;
+	margin: 0;
+	background-image:url(http://d0f474ebcd97ed458c03-8394389ee6d234c3e410e8dfdecf8986.r54.cf2.rackcdn.com/toga_img_asset_00_00_573414e9abf37.jpg_w_1667-h_1000-q_80-c_c-b_0.jpg)
+}
