@@ -1,0 +1,227 @@
+@import "variables";
+
+.dropdown {
+	display: block;
+}
+
+.tb_select,
+.tb_select *
+{
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+    box-sizing: border-box;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+}
+.tb_placeholder{
+padding: 5px 8px;
+position:relative;
+z-index:2;
+}
+
+.tb_select
+{
+display: inline-block;
+position: relative;
+line-height: 1;
+width: 200px;
+max-height:50px;
+text-transform: uppercase;
+outline: 0;
+overflow:hidden;
+padding: 5px 0;
+cursor: pointer;
+transition:all 0.3s;
+border: 6px solid white;
+background: none;
+text-decoration: none;
+color:white;
+font-family: $font-family;
+text-align: center;
+font-weight: bold;
+font-size: 15px;
+margin: 10px;
+letter-spacing: 2px;
+	&:before,
+	&:after
+	{
+	content: "\25B2";
+	position: absolute;
+	right: 10px;
+	top: 12px;
+	font-size: 7px;
+	}
+
+	&:after
+	{
+	content: "\25BC";
+	top: 20px;
+	}
+
+	&:hover,
+	&.open{ 
+		border-color: $default white;
+		color: $default; 
+	}
+	&.open{max-height:600px }
+
+	&.tb_label
+	{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	}
+
+	&.red:hover,
+	&.red.open{ 
+		border-color: $red white;
+		color: $red; 
+	}
+	&.red.open{max-height:600px }
+
+	&.red.tb_label
+	{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	}
+
+	&.black:hover,
+	&.black.open{ 
+		border-color: $black white;
+		color: $black; 
+	}
+	&.black.open{max-height:600px }
+
+	&.black.tb_label
+	{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	}
+
+	&.green:hover,
+	&.green.open{ 
+		border-color: $green white;
+		color: $green; 
+	}
+	&.green.open{max-height:600px }
+
+	&.green.tb_label
+	{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	}
+
+	&.yellow:hover,
+	&.yellow.open{ 
+		border-color: $yellow white;
+		color: $yellow; 
+	}
+	&.yellow.open{max-height:600px }
+
+	&.yellow.tb_label
+	{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	}
+
+	&.purple:hover,
+	&.purple.open{ 
+		border-color: $purple white;
+		color: $purple; 
+	}
+	&.purple.open{max-height:600px }
+
+	&.purple.tb_label
+	{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	}
+}
+
+.tb_select
+	{
+		.tb_list {
+			margin-top: -30px;
+			opacity:0;
+			width: inherit;
+			z-index: 1;
+			padding: 0;
+			transition:all 0.2s;
+
+			li a
+			{
+					overflow: hidden;
+					white-space: nowrap;
+					text-overflow: ellipsis;
+					display:block;  
+					position: relative;
+					padding: 10px 10px;
+					list-style-type: none;
+					color:white;
+					text-decoration:none;
+
+					&:hover {
+						background: $default;
+		    			color: whpurple;
+					}
+				}
+			}
+		&.red .tb_list{
+			@extend .tb_list;
+			li a {
+				&:hover {
+					background: $red;
+	    			color: white;
+				}
+			}
+		}
+
+		&.black .tb_list{
+			@extend .tb_list;
+			li a {
+				&:hover {
+					background: $black;
+	    			color: white;
+				}
+			}
+		}
+
+		&.green .tb_list{
+			@extend .tb_list;
+			li a {
+				&:hover {
+					background: $green;
+	    			color: white;
+				}
+			}
+		}
+
+		&.yellow .tb_list{
+			@extend .tb_list;
+			li a {
+				&:hover {
+					background: $yellow;
+	    			color: white;
+				}
+			}
+		}
+
+		&.purple .tb_list{
+			@extend .tb_list;
+			li a {
+				&:hover {
+					background: $purple;
+	    			color: white;
+				}
+			}
+		}
+	}
+
+.tb_select.open .tb_list { opacity:1;
+margin-top: 0px;}
